@@ -14,7 +14,6 @@
 }
 
 div.containerExterno {
-    height: 1000px;
     margin: auto;
 }
 
@@ -30,7 +29,6 @@ div.containerInterno {
     flex-direction: column;
     max-width: 1200px;
     margin: auto;
-    height: 1000px;
     background: linear-gradient(0deg, #ddddddd4, #f2f2f2, #ddddddd4);
 }
 
@@ -66,7 +64,7 @@ div.controle img{
 }
 
 body {
-    background: url(../img/textura1.jpg);
+    background: url(./img/textura1.jpg);
 }
 
 h1 {
