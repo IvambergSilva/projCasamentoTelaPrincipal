@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Montserrat: 'Montserrat', sans-serif;
+    --fonteCursiva: 'Ephesis', cursive;
+    --cor: #B76E79;
+    --cor2: #F4EFD7;
+}
+
+div.containerExterno {
+    height: 100vh;
+    margin: auto;
+    background: linear-gradient(0deg, #ddddddd4, #f2f2f2, #ddddddd4);
+}
+
+h3 {
+    font: 400 18px var(--Montserrat);
+    margin: 10px 0;
+    text-align: center;
+}
+
+div.containerInterno {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+div.blocoControles {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 20px;
+    margin: auto;
+    padding: 0 5px;
+}
+
+div.controle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    font: 400 15px var(--Montserrat);
+    cursor: pointer;
+    border: 1px solid var(--cor);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+div.controle:hover{
+    background: #B76E7980;
+    transition: 0.2s;
+}
+
+div.controle img{
+    width: 40px;
+    margin-left: 10px;
+}
+
+body {
+    background: url(../img/textura1.jpg);
+}
+
+h1 {
+    font: 700 50px var(--fonteCursiva);
+    letter-spacing: 5px;
+}
+
+h1 span {
+    color: gold;
+    margin: 0 20px;
+}
+
+
+div.barra {
+    background: linear-gradient(to left, transparent, #FFF, transparent);;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main section.painel {
+    width: 100%;
+    display: flex;
+    border-top: 5px solid #DDA89D;
+    border-bottom: 5px solid #DDA89D;
+}
+
+main section article {
+    width: 50%;
+    height: 300px;
+}
+
+main section article.articleCasal {
+    background: linear-gradient(to left, #DDA89D, transparent);
+    overflow: hidden;
+    position: relative;
+}
+
+main section article.articleCasal img {
+    max-width: 100%;
+}
+
+main section article.articleCasal .sombra {
+    background: linear-gradient(to left, #FFFFFF96 80%, var(--cor2));
+    /* background: #FFFFFFB1; */
+    position: absolute;
+    top: 0;
+    font: 400 50px var(--fonteCursiva);
+    text-align: center;
+    max-width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    letter-spacing: 1px;
+}
+
+main section article.articleConvidado {
+    background: linear-gradient(to right, #DDA89D, transparent);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section article.articleConvidado p {
+    font: 400 25px var(--Montserrat);
+}
+
+.articleConvidado div:first-child {
+    border-bottom: 2px solid #000;
+    width: 135px;
+    height: fit-content;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.articleConvidado div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inputCodigo {
+    width: 200px;
+    height: 40px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 0 20px;
+    font: 400 19px var(--Montserrat);
+    box-shadow: 0px 1px 14px #00000080;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+#botaoCodigo {
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    background: #363636;
+    font-size: 20px;
+    font: 400 18px var(--Montserrat);
+    box-shadow: 0px 1px 14px #00000080;
+    color: #FFF;
+    cursor: pointer;
+}
+
+#botaoCodigo:hover {
+    transform: scale(1.03);
+}
+
+.blocoContagem {
+    max-width: 500px;
+    text-align: center;
+    font: 400 15px var(--Montserrat);
+    margin-top: 20px;
+}
+
+.contagem {
+    display: flex;
+    border: 1px solid #000;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.tempoContagem, .textoContagem {
+    display: flex;
+    height: fit-content;
+    font-weight: bold;
+}
+
+.tempoContagem div, .textoContagem div {
+    border: 1px solid #000;
+    width: 125px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+}
+
+.tempoContagem div {
+    height: 100px;
+    background: #FFFFFF80;
+}
+
+.horario {
+    font: 400 50px var(--Montserrat);
+}
+
+
+
+@media screen and (max-width: 700px) {
+    main section.painel {
+        flex-direction: column;
+    }
+    
+    main section article.articleConvidado {
+        width: 100%;
+    }
+
+    main section article.articleCasal {
+        width: 100%;
+    }
+        
+    main section article {
+        width: 100%;
+    }
+
+    main section article.articleCasal .sombra {
+        width: 100%;
+    }
+        
+    h1 {
+        font: 700 40px var(--fonteCursiva);
+    }
+}
+
+@media screen and (max-width: 580px) {
+    div.barra {
+        height: 120px;
+    }
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+        
+    h1 {
+        font: 700 25px var(--fonteCursiva);
+        letter-spacing: 5px;
+    }
+
+
+    main section article.articleCasal .sombra {
+        font: 400 40px var(--fonteCursiva);
+    }
+
+    .blocoContagem {
+        max-width: 300px;
+        text-align: center;
+        font: 400 10px var(--Montserrat);
+    }
+
+    .tempoContagem div {
+        height: 80px;
+    }
+
+    .horario {
+        font: 400 30px var(--Montserrat);
+    }
+    
+}
+
+
+@media screen and (max-width: 400px) {
+    div.controle h3 {
+        font: 400 15px var(--Montserrat);
+    }
+
+    div.controle img{
+        width: 30px;
+    }
+}
+
+
+@media screen and (max-width: 330px) {
+    main section article {
+        height: 250px;
+    }
+    main section article.articleCasal .sombra {
+        padding: 10px;
+    }
+}
+
+.piscarAvisoBorda {
+    animation: piscarAvisoBorda 0.2s;
+    animation-iteration-count: 3;
+}
+
+@keyframes piscarAvisoBorda {
+    0% {
+        border: 4px solid #FF0;
+    }
+    100% {
+        border: 4px solid #000;
+    }
+}
