@@ -3,8 +3,6 @@ let codigoPessoas01 = ['AE2022K0', 'AE2022L1', 'AE2022F2', 'AE2022N3', 'AE2022T4
 
 let body = document.querySelector('body')
 
-// document.addEventListener('contextmenu', event => event.preventDefault());
-
 var inputCodigo = document.querySelector('#inputCodigo')
 
 let decisao = 0;
