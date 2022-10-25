@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="principal.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="containerExterno">
+        <div class="containerInterno">
+            <div class="content-coracao">
+                <div class="square"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="barra">
+                <h1>Andreza <span>&</span> Edwardson</h1>
+            </div>
+    
+            <main>
+                <section class="painel">
+                    <article class="articleCasal">
+                        <div>
+                            <img src="../img/1.jpg" alt="">
+                        </div>
+                        <div class="sombra">
+                            <p>A possibilidade de realizarmos um sonho é o que torna a vida interessante.</p>
+                        </div>
+                    </article>
+                    <article class="articleConvidado">
+                        <div>
+                            <p>EU SOU</p>
+                            <p>CONVIDADO</p>
+                        </div>
+                        <div>
+                            <input type="text" id="inputCodigo" placeholder="Ex: AE2022Z9">
+                            <button id="botaoCodigo">CLIQUE AQUI </button>
+                            <h3 id="convidado"></h3>
+                        </div>
+                    </article>
+                </section>
+    
+                <div class="barra">
+                    <div class="blocoControles">
+                        <div class="controle" id="pause">
+                            <h3>Pausar música</h3>
+                            <img src="/img/pause.svg" alt="">
+                        </div>
+                        <div class="controle" id="play">
+                            <h3>Tocar música</h3>
+                            <img src="/img/play.svg" alt="">
+                        </div>
+                        <audio src="audio.mp3"></audio>
+                    </div>            
+                </div>
+    
+                <section class="blocoContagem">
+                    <h3>❤️ Contagem regressiva para o nosso grande dia... ❤️</h3>
+                    <section class="contagem">
+                    <div class="tempoContagem">
+                        <div id="dias" class="horario"></div>
+                        <div id="horas" class="horario"></div>
+                        <div id="minutos" class="horario"></div>
+                        <div id="segundos" class="horario"></div>
+                    </div>
+                    <div class="textoContagem">
+                        <div>DIAS</div>
+                        <div>HORAS</div>
+                        <div>MINUTOS</div>
+                        <div>SEGUNDOS</div>
+                    </div>
+                    </section>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
