@@ -14,9 +14,8 @@
 }
 
 div.containerExterno {
-    height: 100vh;
+    height: 1000px;
     margin: auto;
-    background: linear-gradient(0deg, #ddddddd4, #f2f2f2, #ddddddd4);
 }
 
 h3 {
@@ -29,11 +28,11 @@ div.containerInterno {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
     max-width: 1200px;
     margin: auto;
+    height: 1000px;
+    background: linear-gradient(0deg, #ddddddd4, #f2f2f2, #ddddddd4);
 }
-
 
 div.blocoControles {
     display: flex;
