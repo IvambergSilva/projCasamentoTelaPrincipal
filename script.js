@@ -15,7 +15,7 @@ document.querySelector('#botaoCodigo').addEventListener('click',  () => {
         elemento = "AE18" + elemento
         if (elemento == codigo){
             console.log(elemento);
-            // window.location.href = 'google.com'
+            window.location.href = 'https://ivambergsilva.github.io/projCasamentoTelaSecundaria/'
             decisao = 1;
         }
     })
@@ -40,7 +40,7 @@ let movimento = 0
 
 body.addEventListener('mousemove', ()=> {
     if (movimento == 0) {
-        // audio.play();
+        audio.play();
     }
 })
 
