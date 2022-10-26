@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap');
 
 * {
     margin: 0;
@@ -231,7 +232,44 @@ main section article.articleConvidado p {
     font: 400 50px var(--Montserrat);
 }
 
+footer {
+    margin: 20px auto 40px;
+    width: 500px;
+    padding: 10px;
+}
 
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+footer div p {
+    font: 600 20px var(--Montserrat);
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 35px;
+}
+
+footer div p span {
+    font-weight: 400;
+}
+
+footer div img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+footer iframe {
+    border: 9px double var(--cor);
+    display: block;
+    margin: 20px auto 0;
+    border-radius: 20px;
+    width: 480px;
+    height: 400px;
+}
 
 @media screen and (max-width: 700px) {
     main section.painel {
@@ -294,6 +332,23 @@ main section article.articleConvidado p {
     .horario {
         font: 400 30px var(--Montserrat);
     }
+        
+    footer {
+        width: 360px;
+    }
+
+    footer iframe {
+        width: 340px;
+        height: 400px;
+    }
+
+    footer div img {
+        width: 40px;
+    }
+        
+    footer div p {
+        font: 600 15px var(--Montserrat);
+    }
     
 }
 
@@ -306,15 +361,41 @@ main section article.articleConvidado p {
     div.controle img{
         width: 30px;
     }
+        
+    footer {
+        width: 300px;
+    }
+
+    footer iframe {
+        width: 300px;
+        height: 300px;
+    }
+    
+    footer div img {
+        width: 35px;
+    }
+        
+    footer div p {
+        font: 600 12px var(--Montserrat);
+    }
 }
 
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 340px) {
     main section article {
         height: 250px;
     }
     main section article.articleCasal .sombra {
         padding: 10px;
+    }
+    
+    footer {
+        width: 280px;
+    }
+
+    footer iframe {
+        width: 280px;
+        height: 280px;
     }
 }
 
