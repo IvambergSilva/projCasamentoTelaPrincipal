@@ -1,7 +1,8 @@
-let codigoPessoas01 = ['AE2022K0', 'AE2022L1', 'AE2022F2', 'AE2022N3', 'AE2022T4', 'AE2022M5', 'AE2022V6', 'AE2022M7', 'AE2022M8', 'AE2022A9'];
-
+let codigoPessoas = ['K0', 'L1', 'F2', 'N3', 'T4', 'M5', 'V6', 'M7', 'M8', 'A9', 'C0', 'M1', 'J2', 'L3', 'E4', 'E5', 'R6', 'P7', 'N8', 'I9', 'J0', 'J1', 'P2', 'I3', 'F4', 'F5', 'L6', 'T7', 'D8', 'E9', 'S8', 'R9']
 
 let body = document.querySelector('body')
+
+document.addEventListener('contextmenu', event => event.preventDefault());
 
 var inputCodigo = document.querySelector('#inputCodigo')
 
@@ -10,10 +11,11 @@ let decisao = 0;
 document.querySelector('#botaoCodigo').addEventListener('click',  () => {
     let codigo = inputCodigo.value.toUpperCase();
     
-    console.log('1');
-    codigoPessoas01.map((elemento) => {
+    codigoPessoas.map((elemento) => {
+        elemento = "AE18" + elemento
         if (elemento == codigo){
-            window.location.href = 'google.com'
+            console.log(elemento);
+            // window.location.href = 'google.com'
             decisao = 1;
         }
     })
@@ -32,16 +34,13 @@ inputCodigo.addEventListener('click', (e) => {
     inputCodigo.value = '';
 })
 
-
-
-
 const audio = document.querySelector('audio');
 
 let movimento = 0
 
 body.addEventListener('mousemove', ()=> {
     if (movimento == 0) {
-        audio.play();
+        // audio.play();
     }
 })
 
@@ -61,8 +60,6 @@ play.addEventListener('click', ()=> {
     audio.play();
     movimento = 1
 })
-
-
 
 
 let diasDiv = document.querySelector("#dias")
