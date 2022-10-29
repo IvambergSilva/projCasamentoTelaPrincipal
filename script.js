@@ -2,7 +2,7 @@ let codigoPessoas = ['K0', 'L1', 'F2', 'N3', 'T4', 'M5', 'V6', 'M7', 'M8', 'A9',
 
 let body = document.querySelector('body')
 
-document.addEventListener('contextmenu', event => event.preventDefault());
+//document.addEventListener('contextmenu', event => event.preventDefault());
 
 var inputCodigo = document.querySelector('#inputCodigo')
 
